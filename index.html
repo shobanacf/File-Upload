@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<title>File Upload using multer</title>
+<style>
+form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial;
+      color: #555555;
+    }
+	 input {
+      background-color: Tomato ;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+	input[type=submit]:hover {
+    background-color: MediumSeaGreen;
+	
+</style>
+</head>
+<body>
+<div class="jumbotron text-center">
+<h1>Single File Upload</h1>
+</div>
+ <form action="/uploadfile" enctype="multipart/form-data" method="POST">
+    <label for="file"> Select one file and save on server folder :</label>
+    <input id="file" type="file" name="file" />
+    <input type="submit" value="Upload a file" />
+  </form>
+  
+
+</body>
+</html>
